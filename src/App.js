@@ -7,7 +7,6 @@ import Favorites from './pages/Favorites';
 import Profile from './pages/Profile';
 import ProfileEdit from './pages/ProfileEdit';
 import NotFound from './pages/NotFound';
-import Header from './pages/Header';
 
 class App extends React.Component {
   render() {
@@ -15,7 +14,6 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/header" component={ Header } />
             <Route exact path="/" component={ Login } />
             <Route exact path="/search" component={ Search } />
             <Route exact path="/album/:id" component={ Album } />

@@ -1,9 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-function Login() {
-  return (
-    <div>Login</div>
-  )
+class Login extends React.Component {
+
+g  render() {
+
+    return (
+      <div>
+        <div>
+          <img src='logo' alt="LogoKhrystianTunes" />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Digite o nome de novo usuário"
+          />
+          <button>
+            Entrar
+          </button>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Login
+export default Login;
